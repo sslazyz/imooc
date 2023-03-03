@@ -1,0 +1,69 @@
+/* banner 整体布局开始 */
+#banner{
+    padding: 32px 0;
+}
+
+.banner-box{
+    height: 482px;
+    /* background-color: rgb(144, 190, 230); */
+
+}
+
+.g-banner{
+    height: 382px;
+    /* background-color: rgba(253, 6, 97, 0.5); */
+}
+
+.course-list{
+    width: 256px;
+    height: 382px;
+    background-color: #39364d;
+    color: #ffffff;
+    border-radius: 8px 0 0 0;
+}
+
+.swiper{
+    width: 896px;
+    height: 382px;
+    background-color: rgb(68, 86, 101);
+    border-radius: 0 8px 0 0;
+}
+.sys-class{
+    height: 100px;
+    background-color: rgb(229, 237, 157);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 20px 0 rgb(0, 0, 0,30%);
+}
+
+
+/* banner 整体布局结束 */
+/* 课程分类列表开始 */
+.course-list ul{
+    margin-top:20px;
+}
+
+.course-list li{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.course-list li:hover{
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.course-list .title{
+    font-size: 14px;
+}
+
+.course-list .sub-title{
+    font-size: 14px;
+}
+
+.course-list .iconfont{
+    float: right;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* 课程分类列表结束 */
