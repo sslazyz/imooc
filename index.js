@@ -138,7 +138,7 @@ swiperA.onmouseleave = function(){
 //倒计时
 {
     //获取结束时间的时间戳
-    let endDate = new Date('2023-03-04 13:41:00');
+    let endDate = new Date('2023-03-05 13:41:00');
     endDate = parseInt(endDate.getTime() / 1000);
     console.log(endDate);
 
