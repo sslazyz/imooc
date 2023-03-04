@@ -45,8 +45,8 @@ setInterval(() => {
     let timer = null;
     let i = 0;
 
-    const prevArrow = document.querySelector('.prev')
-    const nextArrow = document.querySelector('.next')
+    const prevArrow = document.querySelector('.prev');
+    const nextArrow = document.querySelector('.next');
 
     //获取所有的切换原点
     const ul = document.querySelector('.circle-list');
@@ -144,9 +144,9 @@ swiperA.onmouseleave = function(){
 
     let timer = null;
 
-    const hourDom = document.getElementById('hour')
-    const minDom = document.getElementById('min')
-    const secDom = document.getElementById('sec')
+    const hourDom = document.getElementById('hour');
+    const minDom = document.getElementById('min');
+    const secDom = document.getElementById('sec');
 
     function coundDown(){
         //获取此刻当前时间戳
