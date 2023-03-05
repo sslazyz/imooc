@@ -81,7 +81,7 @@ prevArrow.onclick = function(){
     //一秒后，重新允许点击
     setTimeout(()=>{
         flag=true;
-    }, 1000)
+    }, 1000);
 }
 
 //选中的圆点，对其进行函数封装
@@ -94,7 +94,7 @@ function currentCircle(index) {
         changeImg(i);
         setTimeout(() =>{
             flag = true;
-        },1000)
+        },1000);
     }
 }
 
@@ -110,7 +110,7 @@ swiperA.onmouseleave = function(){
         i = ++i ==4 ? 0 : i;
         changeImg(i);
 
-    },3000)
+    },3000);
 }
 
 // prevArrow.onmouseeenter = function(){
@@ -138,7 +138,7 @@ swiperA.onmouseleave = function(){
 //倒计时
 {
     //获取结束时间的时间戳
-    let endDate = new Date('2023-03-05 13:41:00');
+    let endDate = new Date('2023-03-05 13:56:00');
     endDate = parseInt(endDate.getTime() / 1000);
     console.log(endDate);
 
@@ -184,4 +184,32 @@ swiperA.onmouseleave = function(){
     timer = setInterval(() => {
         coundDown();
     }, 1000);
+}
+
+//滚动课程
+{
+    const ul = document.querySelector('.sk-list ul');
+
+    let timer = null;
+
+    let leftPx = 0;
+
+    timer = setInterval(() => {
+        leftPx = --leftPx == -980 ? 0: leftPx;
+        ul.style.left = leftPx + 'px';
+    }, 10);
+
+    ul.onmouseeenter = function(){
+        clearInterval(timer);
+
+    }
+    
+   
+    ul.onmouseleave = function(){
+        timer = setInterval(() => {
+            leftPx = --leftPx == -980 ? 0: leftPx;
+            ul.style.left = leftPx + 'px';
+        }, 9999);
+    }
+    
 }

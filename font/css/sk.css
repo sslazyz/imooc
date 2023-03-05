@@ -1,5 +1,5 @@
 #sk{
-    background: rgb(185, 165, 165); 
+    /* background: rgb(185, 165, 165);  */
     padding: 20px 0;
 
 }
@@ -28,7 +28,7 @@
 .sk-box .sk-list{
     height: 270px;
     width: 960px;
-    background-color: #7b9c78;
+    /* background-color: #7b9c78; */
 }
 
 /* 秒杀拼团整体布局结束 */

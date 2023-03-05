@@ -170,3 +170,49 @@
 .sys-icon:hover{
     transform: translateY(-2px);
 }
+
+/* 滚动课程 */
+.sk-list{
+    position: relative;
+    overflow: hidden;
+}
+
+.sk-list ul{
+    position: absolute;
+    left: 0;
+    width: 3000px;
+}
+
+.sk-list ul li{
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 270px;
+    margin-left: 6px;
+    background-color: #fff;
+}
+
+.sk-list ul li img{
+    width: 234px;
+}
+
+.sk-list ul li .title{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #333;
+}
+.sk-list ul li .difficulty{
+    position: absolute;
+    left: 10px;
+    bottom: 45px;
+    font-size: 12px;
+}
+
+.sk-list ul li .price{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    color: #ec1500;
+    font-weight: 600;
+}
+
