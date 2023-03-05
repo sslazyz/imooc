@@ -138,7 +138,7 @@ swiperA.onmouseleave = function(){
 //倒计时
 {
     //获取结束时间的时间戳
-    let endDate = new Date('2023-03-05 13:56:00');
+    let endDate = new Date('2023-03-06 13:56:00');
     endDate = parseInt(endDate.getTime() / 1000);
     console.log(endDate);
 
@@ -212,4 +212,26 @@ swiperA.onmouseleave = function(){
         }, 9999);
     }
     
+}
+
+
+//课程切换
+{
+    //获取所有的a标签（tab栏）
+    const tabs = document.querySelectorAll('.new-course-box a');
+    //获取到所有的课程列表
+    const uls = document.querySelectorAll('.new-course-list ul');
+
+    for (let i = 0; i < tabs.length; i++) {
+        //循环为所有的a绑定点击事件
+        tabs[i].onclick = function(){
+            for (let j = 0; j < tabs.length; j++) {
+                tabs[j].className='';
+                uls[j].className='';
+            }
+            //给当前选中的a和ul添加样式
+            tabs[i].className='active';
+            uls[i].className='current';
+        }
+    }
 }
