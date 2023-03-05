@@ -83,14 +83,14 @@
 
 /* 左右切换按钮 */
 .swiper .arrow{
-    /* position: absolute;
+    position: absolute;
     top:50%;
     margin-top: -24px;
     height: 48px;
     width: 48px;
     border-radius: 50%;
     background-image: url(/images/icon-left-small.png) no-repeat center/16px auto;
-    color: #fff; */
+    color: #fff;
 
     position: absolute;
     top: 50%;
